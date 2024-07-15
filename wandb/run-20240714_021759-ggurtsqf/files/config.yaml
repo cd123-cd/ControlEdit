@@ -1,0 +1,202 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.10
+    cli_version: 0.17.4
+    framework: huggingface
+    huggingface_version: 4.42.4
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1720894679
+    t:
+      1:
+      - 1
+      - 11
+      - 41
+      - 49
+      - 51
+      - 55
+      - 71
+      - 83
+      2:
+      - 1
+      - 11
+      - 41
+      - 49
+      - 51
+      - 55
+      - 71
+      - 83
+      3:
+      - 23
+      - 61
+      4: 3.8.10
+      5: 0.17.4
+      6: 4.42.4
+      8:
+      - 5
+      13: linux-x86_64
+pretrained_model_name_or_path:
+  desc: null
+  value: /root/autodl-tmp/stable-diffusion-xl-base-1.0
+pretrained_vae_model_name_or_path:
+  desc: null
+  value: /root/autodl-tmp/sdxl-vae-fp16-fix
+controlnet_model_name_or_path:
+  desc: null
+  value: null
+variant:
+  desc: null
+  value: null
+revision:
+  desc: null
+  value: null
+tokenizer_name:
+  desc: null
+  value: null
+output_dir:
+  desc: null
+  value: /root/autodl-tmp/save
+cache_dir:
+  desc: null
+  value: /root/autodl-tmp/.cache
+seed:
+  desc: null
+  value: 42
+resolution:
+  desc: null
+  value: 1024
+crops_coords_top_left_h:
+  desc: null
+  value: 0
+crops_coords_top_left_w:
+  desc: null
+  value: 0
+train_batch_size:
+  desc: null
+  value: 2
+num_train_epochs:
+  desc: null
+  value: 26
+max_train_steps:
+  desc: null
+  value: 15000
+checkpointing_steps:
+  desc: null
+  value: 3000
+checkpoints_total_limit:
+  desc: null
+  value: null
+resume_from_checkpoint:
+  desc: null
+  value: null
+gradient_accumulation_steps:
+  desc: null
+  value: 4
+gradient_checkpointing:
+  desc: null
+  value: false
+learning_rate:
+  desc: null
+  value: 1.0e-05
+scale_lr:
+  desc: null
+  value: false
+lr_scheduler:
+  desc: null
+  value: constant
+lr_warmup_steps:
+  desc: null
+  value: 500
+lr_num_cycles:
+  desc: null
+  value: 1
+lr_power:
+  desc: null
+  value: 1.0
+use_8bit_adam:
+  desc: null
+  value: true
+dataloader_num_workers:
+  desc: null
+  value: 0
+adam_beta1:
+  desc: null
+  value: 0.9
+adam_beta2:
+  desc: null
+  value: 0.999
+adam_weight_decay:
+  desc: null
+  value: 0.01
+adam_epsilon:
+  desc: null
+  value: 1.0e-08
+max_grad_norm:
+  desc: null
+  value: 1.0
+push_to_hub:
+  desc: null
+  value: true
+hub_token:
+  desc: null
+  value: null
+hub_model_id:
+  desc: null
+  value: null
+logging_dir:
+  desc: null
+  value: logs
+allow_tf32:
+  desc: null
+  value: false
+report_to:
+  desc: null
+  value: wandb
+mixed_precision:
+  desc: null
+  value: null
+enable_xformers_memory_efficient_attention:
+  desc: null
+  value: false
+enable_npu_flash_attention:
+  desc: null
+  value: false
+set_grads_to_none:
+  desc: null
+  value: false
+dataset_name:
+  desc: null
+  value: chengzhiyuan/onlyclothe
+dataset_config_name:
+  desc: null
+  value: null
+train_data_dir:
+  desc: null
+  value: null
+image_column:
+  desc: null
+  value: image
+conditioning_image_column:
+  desc: null
+  value: conditioning_image
+caption_column:
+  desc: null
+  value: text
+max_train_samples:
+  desc: null
+  value: null
+proportion_empty_prompts:
+  desc: null
+  value: 0
+num_validation_images:
+  desc: null
+  value: 1
+validation_steps:
+  desc: null
+  value: 100
+tracker_project_name:
+  desc: null
+  value: sd_xl_train_controlnet

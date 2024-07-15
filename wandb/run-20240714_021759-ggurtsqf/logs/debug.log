@@ -1,0 +1,29 @@
+2024-07-14 02:17:59,875 INFO    MainThread:84687 [wandb_setup.py:_flush():76] Current SDK version is 0.17.4
+2024-07-14 02:17:59,875 INFO    MainThread:84687 [wandb_setup.py:_flush():76] Configure stats pid to 84687
+2024-07-14 02:17:59,875 INFO    MainThread:84687 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2024-07-14 02:17:59,875 INFO    MainThread:84687 [wandb_setup.py:_flush():76] Loading settings from /root/autodl-tmp/diffusers/examples/controlnet/wandb/settings
+2024-07-14 02:17:59,875 INFO    MainThread:84687 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-14 02:17:59,875 INFO    MainThread:84687 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-14 02:17:59,875 INFO    MainThread:84687 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'examples/controlnet/train_controlnet_sdxl.py', 'program_abspath': '/root/autodl-tmp/diffusers/examples/controlnet/train_controlnet_sdxl.py', 'program': 'train_controlnet_sdxl.py'}
+2024-07-14 02:17:59,875 INFO    MainThread:84687 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-14 02:17:59,875 INFO    MainThread:84687 [wandb_init.py:_log_setup():529] Logging user logs to /root/autodl-tmp/diffusers/examples/controlnet/wandb/run-20240714_021759-ggurtsqf/logs/debug.log
+2024-07-14 02:17:59,875 INFO    MainThread:84687 [wandb_init.py:_log_setup():530] Logging internal logs to /root/autodl-tmp/diffusers/examples/controlnet/wandb/run-20240714_021759-ggurtsqf/logs/debug-internal.log
+2024-07-14 02:17:59,875 INFO    MainThread:84687 [wandb_init.py:init():569] calling init triggers
+2024-07-14 02:17:59,875 INFO    MainThread:84687 [wandb_init.py:init():576] wandb.init called with sweep_config: {}
+config: {}
+2024-07-14 02:17:59,875 INFO    MainThread:84687 [wandb_init.py:init():619] starting backend
+2024-07-14 02:17:59,875 INFO    MainThread:84687 [wandb_init.py:init():623] setting up manager
+2024-07-14 02:17:59,876 INFO    MainThread:84687 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-07-14 02:17:59,877 INFO    MainThread:84687 [wandb_init.py:init():631] backend started and connected
+2024-07-14 02:17:59,881 INFO    MainThread:84687 [wandb_init.py:init():720] updated telemetry
+2024-07-14 02:18:00,283 INFO    MainThread:84687 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-07-14 02:18:01,114 INFO    MainThread:84687 [wandb_run.py:_on_init():2402] communicating current version
+2024-07-14 02:18:01,476 INFO    MainThread:84687 [wandb_run.py:_on_init():2411] got version response 
+2024-07-14 02:18:01,477 INFO    MainThread:84687 [wandb_init.py:init():804] starting run threads in backend
+2024-07-14 02:18:05,453 INFO    MainThread:84687 [wandb_run.py:_console_start():2380] atexit reg
+2024-07-14 02:18:05,453 INFO    MainThread:84687 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2024-07-14 02:18:05,453 INFO    MainThread:84687 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2024-07-14 02:18:05,453 INFO    MainThread:84687 [wandb_run.py:_redirect():2325] Redirects installed.
+2024-07-14 02:18:05,455 INFO    MainThread:84687 [wandb_init.py:init():847] run started, returning control to user process
+2024-07-14 02:18:05,455 INFO    MainThread:84687 [wandb_run.py:_config_callback():1382] config_cb None None {'pretrained_model_name_or_path': '/root/autodl-tmp/stable-diffusion-xl-base-1.0', 'pretrained_vae_model_name_or_path': '/root/autodl-tmp/sdxl-vae-fp16-fix', 'controlnet_model_name_or_path': None, 'variant': None, 'revision': None, 'tokenizer_name': None, 'output_dir': '/root/autodl-tmp/save', 'cache_dir': '/root/autodl-tmp/.cache', 'seed': 42, 'resolution': 1024, 'crops_coords_top_left_h': 0, 'crops_coords_top_left_w': 0, 'train_batch_size': 2, 'num_train_epochs': 26, 'max_train_steps': 15000, 'checkpointing_steps': 3000, 'checkpoints_total_limit': None, 'resume_from_checkpoint': None, 'gradient_accumulation_steps': 4, 'gradient_checkpointing': False, 'learning_rate': 1e-05, 'scale_lr': False, 'lr_scheduler': 'constant', 'lr_warmup_steps': 500, 'lr_num_cycles': 1, 'lr_power': 1.0, 'use_8bit_adam': True, 'dataloader_num_workers': 0, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_weight_decay': 0.01, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'push_to_hub': True, 'hub_token': None, 'hub_model_id': None, 'logging_dir': 'logs', 'allow_tf32': False, 'report_to': 'wandb', 'mixed_precision': None, 'enable_xformers_memory_efficient_attention': False, 'enable_npu_flash_attention': False, 'set_grads_to_none': False, 'dataset_name': 'chengzhiyuan/onlyclothe', 'dataset_config_name': None, 'train_data_dir': None, 'image_column': 'image', 'conditioning_image_column': 'conditioning_image', 'caption_column': 'text', 'max_train_samples': None, 'proportion_empty_prompts': 0, 'num_validation_images': 1, 'validation_steps': 100, 'tracker_project_name': 'sd_xl_train_controlnet'}
+2024-07-14 22:59:02,867 WARNING MsgRouterThr:84687 [router.py:message_loop():77] message_loop has been closed
