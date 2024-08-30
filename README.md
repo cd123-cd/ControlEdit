@@ -1,4 +1,4 @@
-ban# ControlEdit: A MultiModal Local Clothing Image Editing Method
+# ControlEdit: A MultiModal Local Clothing Image Editing Method
 
 ![Result Image](banner.jpg)
 **Abstract:**
