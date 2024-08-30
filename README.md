@@ -1,6 +1,6 @@
 # ControlEdit: A MultiModal Local Clothing Image Editing Method
 
-![Result Image](image0.jpg)
+![Result Image](image0.png)
 **Abstract:**
 Multimodal clothing image editing refers to the precise adjustment and modification of clothing images using data such as textual 
 descriptions and visual images as control conditions, which effectively improves the work efficiency of designers and reduces the threshold 
