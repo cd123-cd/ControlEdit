@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon1.jpg" type="image/png"> 
+    <title>ControlEdit: A MultiModal Local Clothing Image Editing Method</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            width: 100vw;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding-top: 100px; /* 增加容器与顶部的间距 */
+        }
+        h1 {
+            color: #1f3c73;
+            margin-top: 0;
+        }
+        h2 {
+            color: #333;
+        }
+        .authors {
+            font-size: 16px;
+            color: #666;
+        }
+        .links {
+            margin-top: 20px;
+        }
+        .links a {
+            text-decoration: none;
+            color: #007bff;
+            margin: 0 15px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .note, .abstract {
+            font-size: 16px;
+            color: #333;
+            text-align: left;
+            margin: 20px 0;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+      
+        iframe {
+            margin-top: 30px;
+            width: 80%;
+            height: 400px;
+            border: none;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+            margin-top: 20px;
+        }
+        .item {
+            margin: 10px;
+            text-align: center;
+            width: 30%;
+        }
+        .item img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
+        .lesscontainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        a {
+            text-decoration: none;
+          }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>ControlEdit: A MultiModal Local Clothing Image Editing Method</h1>
+
+        <div class="authors">
+            <p style="line-height:1.7; font-family: Arial, sans-serif; font-size: 25px;color:#fda88c"><b><a href="https://cd123-cd.github.io/" target="_blank" style="color: #fda88c;">Di Cheng<sup><a href="mailto:202220001093@stu.bift.edu.cn" style="text-decoration: none;">📮</a></sup>
+
+            </a>, <a href="https://openreview.net/profile?id=~Yingjie_Shi1" target="_blank" style="color: #fda88c;">YingJie Shi</a> , ShiXin Sun, JiaFu Zhang, WeiJing Wang, Yu Liu</b> </p>
+            <a href="https://wlxy.bift.edu.cn/" target="_blank" style="color: #ffaced89;">School of Arts & Sciences, Beijing Institute of Fashion Technology, Beijing, China</a>
+        </div>
+        
+        <div class="links">
+            <a href="https://github.com/cd123-cd/ControlEdit" target="_blank">[Paper on ArXiv]</a>
+            <a href="https://github.com/cd123-cd/ControlEdit" target="_blank">[Code on GitHub]</a>
+            <a href="https://huggingface.co/chengzhiyuan/ControlEdit" target="_blank">[HuggingFace checkpoints]</a>
+        </div>
+        <hr style="border: 0.5px solid rgb(231, 224, 224); width: 80%; margin: 20px auto;">
+            <iframe src="ControlEdit.mp4" style="width: 50%;margin:10px auto;"></iframe>
+
+        <div class="note">
+            <p style="text-align: center;"> 😀 "ControlEdit, Clothing Image Editing Video"<a href="link_to_data_here" target="_blank">here</a>.</p>
+        </div>
+        <hr style="border: 1px solid rgb(231, 224, 224); width: 80%; margin: 20px auto;">
+
+        <div class="abstract">
+            <h2>Abstract</h2>
+            <p style="line-height:1.5; font-family: Arial, sans-serif; font-size: 20px;color:#0c1c5d; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;Multimodal clothing image editing refers to the precise adjustment and modification of clothing images using data such as textual descriptions and visual images as
+                control conditions, which effectively improves the work efficiency of designers and reduces the threshold for user design. In this paper, we propose a new image editing
+                method ControlEdit, which transfers clothing image editing to multimodal-guided local inpainting of clothing images. We address the difficulty of collecting real image
+                datasets by leveraging the self-supervised learning approach. Based on this learning approach, we extend the channels of the feature extraction network to ensure consistent
+                clothing image style before and after editing, and we design an inverse latent loss function to achieve soft control over the content of non-edited areas. In addition, we adopt
+                Blended Latent Diffusion as the sampling method to make the editing boundaries transition naturally and enforce consistency of non-edited area content. Extensive experiments
+                demonstrate that ControlEdit surpasses baseline algorithms in both qualitative and quantitative evaluations.</p>
+        </div>
+
+        <div class="note">
+            <h2>Note</h2>
+            <ul style="line-height:1.7; font-family: Arial, sans-serif; font-size: 16px;color:#0c1c5d">
+                <li>We propose ControlEdit, the
+                    first multimodal local editing method for clothing images, which is based on Controlnet.
+                    ControlEdit leverages sketches, natural language, and masked source images to guide image
+                    generation. Our editing process aligns with the typical practices of designers when making modifications</li>
+                <li>We propose an <em style="color: #a1c0fb;">inverse latent loss function</em>, which optimizes the native
+                    Controlnet loss function and promotes consistency in non-edited area content.</li>
+                <li>We perform a mask fusion operation on the generated features and the source image features at
+                    each inference step in the latent space, avoiding issues such as unnatural pixel space mask
+                    transitions and inconsistent styles.</li>
+            </ul>
+        </div>
+
+        <figure>
+            <img src="image2.png" alt="ControlEdit Network Architecture.">
+            <figcaption> &#127881;Figure 1: ControlEdit Network Architecture.</figcaption>
+        </figure>
+        <hr style="border: 1px solid rgb(231, 224, 224); width: 80%; margin: 40px auto;">
+
+        <div style="width: 80%; margin: 0 auto; text-align: left;">
+            <h2 style="margin: 0;">Generated Clothing Image</h2>
+        </div>
+
+    
+        <section class="lesscontainer" style="width: 80%; margin:0 auto">
+            <div class="item" >
+                <h3>Sketch</h3>
+                <img src="5sketch.jpg" alt="Sketch">
+            </div>
+            <div class="item">
+                <h3>Mask</h3>
+                <img src="5mask.jpg" alt="Mask">
+            </div>
+            <div class="item">
+                <h3>Image Mask</h3>
+                <img src="5imagemask.png" alt="Image Mask">
+            </div>
+            <div class="item">
+                <h3>Original Image</h3>
+                <img src="5image.jpg" alt="Original Image">
+            </div>
+            <div class="item">
+                <h3>Generated Clothing</h3>
+                <img src="5genimage.png" alt="Generated Clothing">
+            </div>
+        </section>
+        <div >
+            <hr style="border: 0.5px solid rgb(231, 224, 224); width: 80%; margin: 20px auto;">
+           
+            <div style="width: 80%; margin: 0 auto; text-align: left;">
+                <h2 style="margin: 0;">Acknowledgement</h2>
+            </div>
+            <div style="width: 80%; margin:0 auto">
+                <p style="line-height:1.5; font-family: Arial, sans-serif; font-size: 20px;color:#0c1c5d; text-align: justify;">
+                    This work is supported in part by the Open Research Project of Hubei Provincial Engineering
+                    Research Center for Intelligent Textile and Apparel (2023HBITF01), the Strategic Cooperation Agreement between Cloudsky Information Technology Co. and Beijing Institute of
+                    Fashion Technology (Project No. H2024-98), the National Natural Science Foundation of
+                    China (Project No. 62062058), and the R&D Program of Beijing Municipal Education Commission (Project No. KM202210012002). I would like to thank Shuyang Gu, Shujie Liu,
+                    Qinwen Wei and Fang Yan for their valuable assistance with my research experiments and
+                    paper writing.
+              </p>
+            </div>
+
+        </div>
+    </div>
+   
+</body>
+</html>
