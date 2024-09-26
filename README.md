@@ -1,5 +1,5 @@
 # ControlEdit: A MultiModal Local Clothing Image Editing Method
-<a href="https://arxiv.org/abs/2409.14720"><img src="https://img.shields.io/badge/Arxiv-2408.00653-B31B1B.svg"></a> <a href="https://huggingface.co/stabilityai/stable-fast-3d"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Model_Card-Huggingface-orange"></a> <a href="https://cd123-cd.github.io/ControlEdit/"><img src="https://img.shields.io/badge/Project-Website-orange"></a>
+<a href="https://arxiv.org/abs/2409.14720"><img src="https://img.shields.io/badge/Arxiv-2408.00653-B31B1B.svg"></a> <a href="https://huggingface.co/chengzhiyuan/ControlEdit"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Model_Card-Huggingface-orange"></a> <a href="https://cd123-cd.github.io/ControlEdit/"><img src="https://img.shields.io/badge/Project-Website-orange"></a>
 ![Result Image](banner.jpg)
 🔥News
 - [07/20/2024] Our paper has been accepted by The British Machine Vision Association and Society for Pattern Recognition  (BMVC)!
