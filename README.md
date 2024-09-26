@@ -3,6 +3,7 @@
 ![Result Image](banner.jpg)
 🔥News
 - [07/20/2024] Our paper has been accepted by The British Machine Vision Association and Society for Pattern Recognition  (BMVC)!
+  
 **Abstract:**
 Multimodal clothing image editing refers to the precise adjustment and modification of clothing images using data such as textual 
 descriptions and visual images as control conditions, which effectively improves the work efficiency of designers and reduces the threshold 
