@@ -1,0 +1,19 @@
+import torch
+
+# 加载检查点
+checkpoint = torch.load('/SYJ/Anjou/TControlNet/models/control_v11p_sd15_canny.pth')
+
+# 获取需要扩展的权重
+old_weight = checkpoint['control_model.input_hint_block.0.weight']
+
+# 创建新的权重
+new_weight = torch.zeros((16, 7, 3, 3))
+
+# 将旧的权重复制到新的权重中
+new_weight[:, :3, :, :] = old_weight
+
+# 将新的权重设置回检查点
+checkpoint['control_model.input_hint_block.0.weight'] = new_weight
+
+# 保存修改后的检查点
+torch.save(checkpoint, '/SYJ/Anjou/TControlNet/models/candy_modified_checkpoint.pth')
