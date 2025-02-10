@@ -34,7 +34,7 @@ conda activate controledit
 - controledit_sd1.5_v1.ckpt: [HuggingFace](https://huggingface.co/chengzhiyuan/ControlEdit)
 - v1-5-pruned.ckpt: [HuggingFace](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/tree/main)
 
-### Inference
+## Inference
 ```
 python inference.py
 ```
@@ -49,5 +49,6 @@ publisher = {BMVA},
 year      = {2024},
 url       = {https://papers.bmvc2024.org/0723.pdf}
 }
+```
 ## Acknowledgement
 This project is largely based on [ControlNet](https://github.com/lllyasviel/ControlNet/tree/main). We appreciate their great work and contributions to the field.
